@@ -1,0 +1,436 @@
+
+/* RESET */
+* {
+    margin: 0; /* Menghilangkan jarak luar */
+    padding: 0; /* Menghilangkan jarak dalam */
+    box-sizing: border-box; /* Mengatur ukuran elemen */
+    scroll-behavior: smooth; /* Membuat scroll lebih halus */
+}
+
+/* MENGATUR TAMPILAN DASAR */
+body {
+    font-family: 'Poppins', sans-serif; /* Mengatur jenis huruf */
+    color: #333; /* Mengatur warna tulisan */
+    background-color: #fff; /* Memberi warna latar putih */
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #173f5f; /* Memberi warna biru tua */
+    padding: 15px 0; /* Mengatur jarak dalam navbar */
+    position: sticky; /* Membuat navbar tetap di atas */
+    top: 0; /* Menempel pada bagian atas */
+    z-index: 1000; /* Menampilkan navbar di depan elemen lain */
+}
+
+/* Mengatur isi navbar */
+.nav-container {
+    max-width: 1200px; /* Membatasi lebar navbar */
+    margin: 0 auto; /* Membuat navbar di tengah */
+    display: flex; /* Membuat isi berjajar */
+    justify-content: space-between; /* Memisahkan logo dan menu */
+    align-items: center; /* Menyamakan posisi isi */
+    padding: 0 20px; /* Memberi jarak kiri dan kanan */
+}
+
+/* Mengatur logo */
+.nav-logo {
+    color: #fff; /* Memberi warna putih */
+    font-size: 24px; /* Mengatur ukuran tulisan */
+    font-weight: 700; /* Membuat tulisan tebal */
+}
+
+/* Mengatur daftar menu */
+.nav-links {
+    list-style: none; /* Menghilangkan tanda daftar */
+    display: flex; /* Membuat menu berjajar */
+    gap: 25px; /* Memberi jarak antar menu */
+}
+
+/* Mengatur tulisan menu */
+.nav-links a {
+    color: #ddd; /* Memberi warna tulisan */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    font-size: 14px; /* Mengatur ukuran tulisan */
+}
+
+/* Efek ketika menu disentuh */
+.nav-links a:hover {
+    color: #f6c85f; /* Mengubah warna menjadi kuning */
+}
+
+/* Mengatur ikon navbar */
+.nav-icons {
+    display: flex; /* Membuat ikon berjajar */
+    align-items: center; /* Membuat ikon sejajar tengah */
+    gap: 15px; /* Memberi jarak antar ikon */
+}
+
+/* Mengatur warna ikon */
+.nav-icons a {
+    color: #fff; /* Memberi warna putih */
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+/* Mengatur tombol pelajari */
+.btn-pesan {
+    background-color: #f6c85f; /* Memberi warna kuning */
+    color: #173f5f !important; /* Memberi warna tulisan biru */
+    padding: 8px 20px; /* Memberi jarak dalam tombol */
+    border-radius: 20px; /* Membuat sudut melengkung */
+    font-size: 13px; /* Mengatur ukuran tulisan */
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+/* HERO SECTION */
+.hero {
+    padding: 60px 20px; /* Memberi jarak dalam banner */
+    background-color: #edf4f8; /* Memberi warna biru muda */
+}
+
+/* Mengatur isi banner */
+.hero-container {
+    max-width: 1200px; /* Membatasi lebar banner */
+    margin: 0 auto; /* Membuat posisi di tengah */
+    display: flex; /* Membuat tulisan dan gambar berjajar */
+    align-items: center; /* Menyamakan posisi tengah */
+    gap: 40px; /* Memberi jarak antar bagian */
+}
+
+/* Mengatur bagian tulisan banner */
+.hero-text {
+    flex: 1; /* Membagi ruang secara fleksibel */
+}
+
+/* Mengatur judul banner */
+.hero-text h1 {
+    font-family: 'Playfair Display', serif; /* Mengatur jenis huruf */
+    font-size: 42px; /* Mengatur ukuran judul */
+    color: #173f5f; /* Memberi warna biru tua */
+    margin-bottom: 20px; /* Memberi jarak bawah */
+    line-height: 1.2; /* Mengatur jarak antarbaris */
+}
+
+/* Mengatur paragraf banner */
+.hero-text p {
+    font-size: 14px; /* Mengatur ukuran tulisan */
+    color: #555; /* Memberi warna abu-abu */
+    line-height: 1.8; /* Mengatur jarak baris */
+    margin-bottom: 15px; /* Memberi jarak bawah */
+}
+
+/* Mengatur tombol mulai belajar */
+.btn-pesan-sekarang {
+    display: inline-block; /* Membuat tombol mengikuti isi */
+    background-color: #173f5f; /* Memberi warna biru tua */
+    color: #fff; /* Memberi warna tulisan putih */
+    padding: 10px 25px; /* Memberi jarak dalam tombol */
+    border-radius: 20px; /* Membuat sudut melengkung */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    font-size: 14px; /* Mengatur ukuran tulisan */
+    margin-top: 10px; /* Memberi jarak atas */
+}
+
+/* Mengatur bagian gambar banner */
+.hero-image {
+    flex: 1; /* Membagi ruang secara fleksibel */
+    text-align: center; /* Memposisikan gambar di tengah */
+}
+
+/* Mengatur gambar banner */
+.hero-image img {
+    max-width: 100%; /* Membatasi lebar gambar */
+    border-radius: 15px; /* Membuat sudut gambar melengkung */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Memberi bayangan */
+}
+
+/* MENU SECTION */
+.menu-section {
+    padding: 60px 20px; /* Memberi jarak dalam bagian */
+    max-width: 1200px; /* Membatasi lebar bagian */
+    margin: 0 auto; /* Membuat bagian di tengah */
+}
+
+/* Mengatur judul teknik dasar */
+.section-title {
+    text-align: center; /* Membuat judul di tengah */
+    font-family: 'Playfair Display', serif; /* Mengatur jenis huruf */
+    font-size: 36px; /* Mengatur ukuran judul */
+    color: #173f5f; /* Memberi warna biru tua */
+    margin-bottom: 40px; /* Memberi jarak bawah */
+}
+
+/* Mengatur susunan kartu */
+.menu-grid {
+    display: grid; /* Menggunakan sistem grid */
+    grid-template-columns: repeat(3, 1fr); /* Membuat tiga kolom */
+    gap: 30px; /* Memberi jarak antar kartu */
+}
+
+/* Mengatur kartu informasi */
+.menu-card {
+    background-color: #edf4f8; /* Memberi warna biru muda */
+    border-radius: 15px; /* Membuat sudut melengkung */
+    padding: 20px; /* Memberi jarak dalam kartu */
+    text-align: center; /* Membuat tulisan di tengah */
+    transition: 0.3s; /* Membuat perubahan lebih halus */
+}
+
+/* Efek ketika kartu disentuh */
+.menu-card:hover {
+    transform: translateY(-5px); /* Mengangkat kartu sedikit */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Memberi bayangan */
+}
+
+/* Mengatur gambar pada kartu */
+.menu-card img {
+    width: 100%; /* Membuat gambar memenuhi kartu */
+    height: 200px; /* Mengatur tinggi gambar */
+    object-fit: cover; /* Menyesuaikan gambar */
+    border-radius: 10px; /* Membuat sudut gambar melengkung */
+    margin-bottom: 15px; /* Memberi jarak bawah */
+}
+
+/* Mengatur judul kartu */
+.menu-card h3 {
+    font-size: 18px; /* Mengatur ukuran judul */
+    color: #173f5f; /* Memberi warna biru */
+    margin-bottom: 10px; /* Memberi jarak bawah */
+}
+
+/* Mengatur tulisan kartu */
+.menu-card p {
+    font-size: 13px; /* Mengatur ukuran tulisan */
+    color: #666; /* Memberi warna abu-abu */
+    line-height: 1.6; /* Mengatur jarak baris */
+}
+
+/* BOOK SECTION */
+.book-section {
+    padding: 60px 20px; /* Memberi jarak dalam bagian */
+    background-color: #f2f5f7; /* Memberi warna latar */
+}
+
+/* Mengatur judul peraturan */
+.book-title {
+    text-align: center; /* Membuat judul di tengah */
+    font-size: 36px; /* Mengatur ukuran tulisan */
+    color: #173f5f; /* Memberi warna biru */
+    margin-bottom: 40px; /* Memberi jarak bawah */
+}
+
+/* Mengatur isi peraturan */
+.book-container {
+    max-width: 1200px; /* Membatasi lebar bagian */
+    margin: 0 auto; /* Membuat posisi di tengah */
+    display: flex; /* Membuat tulisan dan gambar berjajar */
+    gap: 40px; /* Memberi jarak antar bagian */
+    align-items: center; /* Menyamakan posisi tengah */
+}
+
+/* Mengatur bagian tulisan peraturan */
+.book-form {
+    flex: 1; /* Membagi ruang secara fleksibel */
+}
+
+/* Mengatur judul peraturan */
+.book-form h3 {
+    color: #173f5f; /* Memberi warna biru */
+    margin-bottom: 20px; /* Memberi jarak bawah */
+}
+
+/* Mengatur daftar peraturan */
+.aturan-list {
+    padding-left: 20px; /* Memberi jarak kiri */
+    line-height: 2; /* Mengatur jarak antarbaris */
+    color: #444; /* Memberi warna tulisan */
+}
+
+/* Mengatur bagian gambar peraturan */
+.book-map {
+    flex: 1; /* Membagi ruang secara fleksibel */
+    height: 350px; /* Mengatur tinggi gambar */
+}
+
+/* Mengatur gambar lapangan */
+.book-map img {
+    width: 100%; /* Membuat gambar memenuhi kotak */
+    height: 100%; /* Mengatur tinggi gambar */
+    object-fit: cover; /* Menyesuaikan gambar */
+    border-radius: 10px; /* Membuat sudut melengkung */
+}
+
+/* TESTIMONIAL SECTION */
+.testimonial-section {
+    padding: 60px 20px; /* Memberi jarak dalam bagian */
+    background-color: #fff; /* Memberi warna putih */
+}
+
+/* Mengatur judul posisi pemain */
+.testimonial-title {
+    text-align: center; /* Membuat judul di tengah */
+    font-size: 36px; /* Mengatur ukuran tulisan */
+    color: #173f5f; /* Memberi warna biru */
+    margin-bottom: 40px; /* Memberi jarak bawah */
+}
+
+/* Mengatur susunan kartu posisi */
+.testimonial-grid {
+    max-width: 1200px; /* Membatasi lebar bagian */
+    margin: 0 auto; /* Membuat posisi di tengah */
+    display: grid; /* Menggunakan sistem grid */
+    grid-template-columns: repeat(2, 1fr); /* Membuat dua kolom */
+    gap: 30px; /* Memberi jarak antar kartu */
+}
+
+/* Mengatur kartu posisi pemain */
+.testimonial-card {
+    background-color: #173f5f; /* Memberi warna biru tua */
+    color: #fff; /* Memberi warna tulisan putih */
+    padding: 30px; /* Memberi jarak dalam kartu */
+    border-radius: 10px; /* Membuat sudut melengkung */
+}
+
+/* Mengatur paragraf kartu posisi */
+.testimonial-card p {
+    font-size: 14px; /* Mengatur ukuran tulisan */
+    line-height: 1.8; /* Mengatur jarak baris */
+    margin-bottom: 20px; /* Memberi jarak bawah */
+    color: #ddd; /* Memberi warna abu-abu muda */
+}
+
+/* Mengatur judul kartu posisi */
+.testimonial-card h4 {
+    font-size: 16px; /* Mengatur ukuran tulisan */
+    margin-bottom: 5px; /* Memberi jarak bawah */
+    color: #f6c85f; /* Memberi warna kuning */
+}
+
+/* Mengatur keterangan posisi */
+.testimonial-card span {
+    font-size: 13px; /* Mengatur ukuran tulisan */
+    color: #ddd; /* Memberi warna abu-abu muda */
+}
+
+/* FOOTER */
+.footer {
+    background-color: #173f5f; /* Memberi warna biru tua */
+    color: #ccc; /* Memberi warna tulisan */
+    padding: 50px 20px 20px; /* Memberi jarak dalam footer */
+}
+
+/* Mengatur isi footer */
+.footer-container {
+    max-width: 1200px; /* Membatasi lebar footer */
+    margin: 0 auto; /* Membuat posisi di tengah */
+    display: grid; /* Menggunakan sistem grid */
+    grid-template-columns: repeat(3, 1fr); /* Membuat tiga kolom */
+    gap: 40px; /* Memberi jarak antar kolom */
+    margin-bottom: 30px; /* Memberi jarak bawah */
+}
+
+/* Mengatur judul footer */
+.footer-col h3 {
+    color: #fff; /* Memberi warna putih */
+    font-size: 18px; /* Mengatur ukuran tulisan */
+    margin-bottom: 15px; /* Memberi jarak bawah */
+}
+
+/* Mengatur tulisan footer */
+.footer-col p {
+    font-size: 14px; /* Mengatur ukuran tulisan */
+    margin-bottom: 8px; /* Memberi jarak bawah */
+    line-height: 1.6; /* Mengatur jarak baris */
+}
+
+/* Mengatur ikon media sosial */
+.social-icons {
+    display: flex; /* Membuat ikon berjajar */
+    gap: 15px; /* Memberi jarak antar ikon */
+    margin-top: 10px; /* Memberi jarak atas */
+}
+
+/* Mengatur tampilan ikon media sosial */
+.social-icons a {
+    color: #fff; /* Memberi warna putih */
+    font-size: 18px; /* Mengatur ukuran ikon */
+}
+
+/* Efek saat ikon disentuh */
+.social-icons a:hover {
+    color: #f6c85f; /* Mengubah warna menjadi kuning */
+}
+
+/* Mengatur bagian bawah footer */
+.footer-bottom {
+    text-align: center; /* Membuat tulisan di tengah */
+    padding-top: 20px; /* Memberi jarak atas */
+    border-top: 1px solid #456; /* Memberi garis pembatas */
+}
+
+/* Mengatur tulisan hak cipta */
+.footer-bottom p {
+    font-size: 13px; /* Mengatur ukuran tulisan */
+    color: #ccc; /* Memberi warna abu-abu */
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    /* Menyembunyikan menu navigasi pada layar kecil */
+    .nav-links {
+        display: none;
+    }
+
+    /* Mengatur banner menjadi susunan ke bawah */
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Mengecilkan judul banner */
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    /* Membuat kartu menjadi dua kolom */
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Mengatur peraturan menjadi susunan ke bawah */
+    .book-container {
+        flex-direction: column;
+    }
+
+    /* Membuat posisi pemain menjadi satu kolom */
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Membuat footer menjadi satu kolom */
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* RESPONSIVE UNTUK HP KECIL */
+@media (max-width: 480px) {
+
+    /* Membuat kartu menjadi satu kolom */
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Mengecilkan judul bagian */
+    .section-title,
+    .book-title,
+    .testimonial-title {
+        font-size: 27px;
+    }
+
+    /* Mengatur jarak isi banner */
+    .hero {
+        padding: 40px 15px;
+    }
+}
